@@ -30,7 +30,10 @@ hr{border-color:#2b2a2c}
 # Put clothes.csv OR products.csv in the same folder as app.py.
 # If both exist, clothes.csv is used first.
 def load_products():
-    csv_file = next((name for name in ("clothes.csv", "products.csv") if Path(name).exists()), None)
+    csv_file = "clothes.csv"
+    if not oath(csv_file).exists():
+        st.error("clothes,csv not found. Put it in the same folder as app.py")
+        st.stops()
     if csv_file is None:
         st.error("CSV not found. Put clothes.csv or products.csv in the same folder as app.py.")
         st.stop()
