@@ -171,4 +171,4 @@ else:
     st.info("Add product categories like Tops, Bottoms, and Shoes to your CSV to enable outfit ideas.")
 
 st.markdown("---")
-st.caption("Style Vision AI is a fashion recommendation prototype. It uses text
+st.caption("Style Vision AI is a fashion recommendation prototype. It uses text similarity to match yoour description with catalogue items.")
