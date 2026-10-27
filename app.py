@@ -21,7 +21,7 @@ st.write(
 
 @st.cache_data
 def load_products():
-    data = pd.read_csv("E:\\Style Vision\\clothes.csv")
+    data = pd.read_csv("clothes.csv")
     required = [
         "name", "category", "color", "style",
         "occasion", "price", "description", "image"
